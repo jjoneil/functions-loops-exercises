@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prob 9</title>
+</head>
+<body>
+	<script>
+		//take two sorted lists
+		//push them together
+		//sort again
+		function joinSort(arr1, arr2){
+			for(var i = 0; i < arr2.length; i++){
+				arr1.push(arr2[i]);
+				arr1 = arr1.sort(function(a,b){return a-b});
+			}
+			return arr1;
+		}
+
+			console.log(joinSort([1,2,5,6,9],[3,4,5,10]));
+			console.log(joinSort([],[]));
+			console.log(joinSort([-1, 0, 1],[-2, 2]));
+
+	</script>
+</body>
+</html>

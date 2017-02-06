@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prob 7</title>
+</head>
+<body>
+	<script>
+		function cutOff(arr, max){
+			newArray = []
+			for(i = 0; i < arr.length; i++){
+				if(arr[i] <= max){
+					newArray.push(arr[i]);
+				} else {
+					newArray.push(max);
+				}
+			}
+			return newArray;
+		}
+
+		console.log(cutOff([1,2,3,4,5,6,7,8], 4));
+		console.log(cutOff([1,5,7,3,1,5,7], 3));
+
+	</script>
+</body>
+</html>
