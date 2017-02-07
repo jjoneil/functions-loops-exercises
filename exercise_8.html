@@ -10,11 +10,16 @@
 	function randInt(){
 		var arr = []
 		while(arr.length < 10){
-		    var math = Math.floor(Math.random()*100)
-		    arr.indexOf(math) === -1;
-		    arr[arr.length] = math;
+		    var rand = Math.floor(Math.random()*100);
+		    if(arr.indexOf(rand) === -1){
+		    arr.push(rand);
+			}
 		}
-		console.log(arr);
+		return arr;
+	}
+
+	console.log(randInt());
+
 	</script>
 </body>
 </html>

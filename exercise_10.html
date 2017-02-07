@@ -13,9 +13,9 @@
 		function bigSum(arr){
 			var outArr = []
 			for(var i = 0; i < arr.length; i++){
-				if(arr[i] >= arr[i + 1]){
+				if(arr[i-1] + arr[i] >= arr[i-1]){
+					outArr.push(arr[i-1]);
 					outArr.push(arr[i]);
-					outArr.push(arr[i + 1]);
 				}
 			}
 			return outArr;

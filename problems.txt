@@ -112,14 +112,6 @@ in new array (of randomly generated numbers) check for that number
 
 
 
-
-
-
-
-
-
-
-
 11. One way of encoding a message is called a "square code". Given a message like:
 
 "Have a nice day!"
@@ -157,3 +149,22 @@ fj 2.00%
 
 
 (source: http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html, with edits)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

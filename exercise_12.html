@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prob 12</title>
+</head>
+<body>
+	<script>
+		var input = "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
+
+		input = input.toLowerCase(); //remove casing
+
+		var bigrams = {}; //object to store letter pairs
+
+		for(var i = 1; i<input.length; i++){
+			var letterPair = input[i-1] + input[i];
+			if(bigrams[letterPair] === undefined){
+				bigrams[letterPair] = 0;
+			}
+			bigrams[letterPair] = bigrams[letterPair] + 1;
+		}
+
+		var topBigrams = [];
+		for (var bigram in bigrams) {
+			var current = {
+				bigram: bigram,
+				count: bigrams[bigram]
+			};
+			topBigrams.push(current);
+		}
+
+		topBigrams.sort(function(a,b){
+			return b.count - a.count;
+		});
+
+		for (var i = 0; i<10; i++){
+			
+		}
+
+
+	</script>
+</body>
+</html>
